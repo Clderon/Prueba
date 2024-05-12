@@ -13,8 +13,7 @@ const app = express();
 
 mongoose
   .connect(
-    // "mongodb://miguel:password@mongocontenedor:27017/miapp?authSource=admin"
-    "mongodb://miguel:password@localhost:27017/miapp?authSource=admin"
+    "mongodb://miguel:root@mongocontenedor:27017/miapp?authSource=admin"
   )
   .then(() => {
     console.log("Conexión exitosa a la base de datos");
